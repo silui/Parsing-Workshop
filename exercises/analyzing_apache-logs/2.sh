@@ -1,0 +1,1 @@
+cat apache_logs.txt | sed "s/.*\" \(\".*\"\)/\1/" | sort | uniq -c | sort -r
